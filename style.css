@@ -1,0 +1,41 @@
+/* Color Theme Swatches in Hex */
+
+
+body{
+    background-color: #2E0927;
+    font-family: 'Open Sans', sans-serif;
+    color:  #FF8C00;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle,.circle:after{
+    display: block;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+}
+.circle {
+    background-color: transparent;
+    border-top: 2.5vh solid  #D90000;
+    border-right: 2.5vh solid #FF2D00;
+    border-bottom: 2.5vh solid #FF8C00;
+    border-left: 2.5vh solid #04756F;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: .8s;
+    animation-name: spinner-loading
+}
+@keyframes spinner-loading{
+    0% {
+        transform: rotate(0deg)
+    } to {
+          transform: rotate(1turn)
+      }
+}
